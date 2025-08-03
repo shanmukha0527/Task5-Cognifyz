@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration Demo - Cognifyz Internship</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Cognifyz API Demo</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#albums">Albums</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Dynamic Content with API Integration</h2>
+                <p>Fetching real-time data from JSONPlaceholder API</p>
+            </div>
+        </section>
+
+        <!-- Posts Section -->
+        <section id="posts" class="content-section">
+            <div class="container">
+                <h2>Recent Posts</h2>
+                <div class="controls">
+                    <button id="fetch-posts" class="btn btn-primary">Load Posts</button>
+                    <button id="clear-posts" class="btn btn-secondary">Clear Posts</button>
+                </div>
+                <div id="posts-container" class="posts-grid">
+                    <!-- Posts will be loaded here dynamically -->
+                </div>
+                <div id="posts-loading" class="loading hidden">Loading posts...</div>
+            </div>
+        </section>
+
+        <!-- Users Section -->
+        <section id="users" class="content-section">
+            <div class="container">
+                <h2>Users Directory</h2>
+                <div class="controls">
+                    <button id="fetch-users" class="btn btn-primary">Load Users</button>
+                    <button id="clear-users" class="btn btn-secondary">Clear Users</button>
+                </div>
+                <div id="users-container" class="users-grid">
+                    <!-- Users will be loaded here dynamically -->
+                </div>
+                <div id="users-loading" class="loading hidden">Loading users...</div>
+            </div>
+        </section>
+
+        <!-- Albums Section -->
+        <section id="albums" class="content-section">
+            <div class="container">
+                <h2>Photo Albums</h2>
+                <div class="controls">
+                    <button id="fetch-albums" class="btn btn-primary">Load Albums</button>
+                    <button id="clear-albums" class="btn btn-secondary">Clear Albums</button>
+                </div>
+                <div id="albums-container" class="albums-grid">
+                    <!-- Albums will be loaded here dynamically -->
+                </div>
+                <div id="albums-loading" class="loading hidden">Loading albums...</div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Search Posts</h2>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search posts by title...">
+                    <button id="search-btn" class="btn btn-primary">Search</button>
+                </div>
+                <div id="search-results" class="posts-grid">
+                    <!-- Search results will appear here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cognifyz Internship Project - API Integration Demo</p>
+            <p>Data provided by <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
