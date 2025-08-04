@@ -1,6 +1,6 @@
 # Task5-Cognifyz
 # 🌐 Cognifyz Internship - API Integration Demo
-
+live site:https://shanmukha0527.github.io/Task5-Cognifyz/
 ## 📌 Project Overview
 This project is part of my **Cognifyz Technologies Front-End Development Internship**.  
 It demonstrates **API integration** using the free **JSONPlaceholder API**, fetching and displaying dynamic data for **Posts, Users, and Albums**.
